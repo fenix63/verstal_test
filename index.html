@@ -13,17 +13,20 @@
 			<div class="flex-container">
 				<div class="input-block">
 					<label for="">* Фамилия</label>
-					<input type="text" placeholder="Фамилия" />
+					<input type="text" placeholder="Фамилия" onblur="checkSurname(this.value, $(this).parent());"/>
+					<div class="error-text" ></div>
 				</div>
 
 				<div class="input-block">
 					<label for="">* Имя</label>
-					<input type="text" placeholder="Имя" />
+					<input type="text" placeholder="Имя" onblur="checkName(this.value, $(this).parent());"/>
+					<div class="error-text" ></div>
 				</div>
 
 				<div class="input-block">
 					<label for="">* Отчество</label>
 					<input type="text" placeholder="Отчество" />
+					<div class="error-text" ></div>
 				</div>
 			</div>
 			
