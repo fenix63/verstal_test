@@ -4,11 +4,13 @@ html, body{
 }
 
 .parent-container{
+	width: 98%;
 	margin: 0 auto;
 }
 
 input[type="text"]{
 	display: block;
+	width: 100%;
 }
 
 @media screen and (min-width: 1024) and (max-width: 1599px){
@@ -16,7 +18,7 @@ input[type="text"]{
 }
 
 @media screen and (min-width: 1600){
-	
+
 }
 
 
@@ -24,8 +26,9 @@ input[type="text"]{
 .flex-container {
 	display: -webkit-flex; 
 	display: flex; /*отображает контейнер как блочный элемент*/
-	justify-content: space-around;
+	
 	width: 100%;
+	flex-wrap: wrap;
 }
 .flex-container {
  	display: -webkit-inline-flex;
